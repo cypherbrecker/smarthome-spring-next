@@ -1,0 +1,31 @@
+.container {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0px;
+  border-radius: 10px;
+}
+
+.container:hover,
+.active {
+  background-color: #5d87ff;
+  color: white;
+}
+
+.menuItem {
+  justify-content: space-between;
+  align-items: center; /* vertically */
+}
+
+.trashIcon {
+  cursor: pointer;
+  color: var(--uniqRed);
+  display: none;
+  margin-left: 50%;
+}
+
+/* showing the trashIcon on hover to be delete */
+.menuItem:hover .trashIcon {
+  display: inline;
+}

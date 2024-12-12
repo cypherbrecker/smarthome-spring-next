@@ -1,0 +1,43 @@
+.container {
+  text-align: center;
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--borderSoft);
+  max-width: 100%;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 200;
+  color: var(--textSoft);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: rgb(156, 156, 156);
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #eda726;
+}
+
+.selected {
+  background-color: #eda726;
+  color: white;
+}
+
+.message {
+  color: var(--textSoft);
+}

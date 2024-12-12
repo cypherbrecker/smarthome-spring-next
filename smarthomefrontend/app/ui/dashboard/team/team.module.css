@@ -1,0 +1,164 @@
+.container {
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--borderSoft);
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 200;
+  color: var(--textSoft);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableContainer {
+  max-height: 360px;
+  overflow-y: auto;
+  border: 1px solid var(--borderSoft);
+  border-radius: 10px;
+}
+
+.tableContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background-color: #1d2431;
+  border-radius: 10px;
+  border: 2px solid var(--bgSoft);
+}
+
+.table td {
+  padding: 10px;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.userImage {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.status {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.greyTextLowSize {
+  color: grey;
+  font-size: 0.9em;
+  display: block;
+}
+
+.orangeTextLowSize {
+  color: #eda726;
+  font-size: 0.9em;
+  display: block;
+}
+
+.greyText {
+  color: grey;
+}
+
+/*
+.table tbody:hover {
+  background-color: var(--borderSoft);
+  border-radius: 10px;
+  cursor: pointer;
+}*/
+
+.table tbody tr:hover {
+  background-color: #30394a;
+}
+
+.table thead tr td {
+  border-bottom: 1px solid var(--borderSoft);
+}
+
+.actionIconStyle {
+  margin-left: 5px;
+}
+
+.deleteIconStyle {
+  color: rgb(250, 137, 107);
+}
+
+.addButtonContainer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.addIcon {
+  color: var(--uniqGreen);
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput {
+  position: fixed;
+  padding: 10px;
+  background-color: #1d2431;
+  color: white;
+  /* border: 1px solid #ccc;*/
+  border-radius: 40px;
+  width: 300px;
+  margin-right: 10px;
+  border: none;
+}
+
+.searchResults {
+  position: fixed;
+  /* background-color: #1d2431;*/
+  /* border: 1px solid #ccc;*/
+  margin-right: 10px;
+  height: 10px;
+}
+
+.searchResultItem {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #1d2431;
+  width: 250px;
+  border-radius: 40px;
+  margin-bottom: 10px;
+}
+
+.searchResultItem:hover {
+  background-color: #eda726;
+}
+
+.addExtra {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.isLeaderText {
+  color: var(--uniqRed);
+}
+
+.TextGreen {
+  color: var(--uniqGreen2);
+}
+
+.TextRed {
+  color: var(--uniqRed);
+}

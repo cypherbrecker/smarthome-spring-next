@@ -1,0 +1,93 @@
+.flexContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container {
+  padding: 20px;
+  /* max-width: 400px;*/
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid var(--borderSoft);
+  border-radius: 10px;
+  flex: 1;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.headerText {
+  color: var(--textSoft);
+  font-size: 20px;
+}
+
+.label {
+  color: var(--textSoft);
+  margin-top: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  background-color: var(--bgSoft);
+  border: 1px solid var(--greyText);
+  color: var(--textSoft);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.input::placeholder {
+  color: var(--textSoft);
+}
+
+.button {
+  padding: 10px;
+  background-color: var(--uniqBlue);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 50%;
+  min-width: 100px;
+}
+
+.button:hover {
+  background-color: var(--uniqBlueHover);
+}
+
+.buttonGreen {
+  padding: 10px;
+  background-color: var(--uniqGreen);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 50%;
+  min-width: 100px;
+}
+
+.buttonGreen:hover {
+  background-color: var(--uniqGreen2);
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--uniqGreen);
+}

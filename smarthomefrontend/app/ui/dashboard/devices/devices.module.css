@@ -1,0 +1,321 @@
+.headerText {
+  color: var(--textSoft);
+  font-size: 20px;
+}
+
+.devicesContainer {
+  padding: 20px;
+}
+
+.deviceList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.deviceItem {
+  position: relative;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  width: calc(25% - 10px);
+  height: 160px;
+  margin-top: 20px;
+  /*background-color: #2f3b50;*/
+  border-radius: 10px;
+  color: #688392;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.turnImg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.addDoc {
+  width: calc(25% - 10px);
+  height: 160px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  background-color: #2f3b50;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #688392;
+  text-align: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.addDoc:hover,
+.deviceItem:hover {
+  transform: scale(1.06);
+}
+
+.deviceDetails {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+}
+
+.modelOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modelContent {
+  background-color: #2f3b50;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.modelContent input::placeholder {
+  color: var(--textSoft);
+}
+
+.modelContent h2 {
+  margin-bottom: 15px;
+  color: var(--textSoft);
+}
+
+.modelContent select,
+.modelContent input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #688392;
+  background-color: #3f4b66;
+  color: var(--textSoft);
+  appearance: none;
+}
+
+.modelContent .saveButton {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: var(--uniqBlue);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modelContent .saveButton:hover {
+  background-color: var(--uniqBlueHover);
+}
+
+.modelContent .cancelButton {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: var(--uniqRed);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modelContent .cancelButton:hover {
+  background-color: var(--uniqRedHover);
+}
+
+.deviceNameStyle {
+  color: var(--textSoft);
+}
+
+.deviceDetailsStyle {
+  color: var(--whiteGreyText);
+}
+
+.deviceImageTopLeft {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 42px;
+  height: 42px;
+}
+
+.scheduleIcon {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect for schedule icon */
+.scheduleIcon:hover,
+.deleteScheduleIcon:hover,
+.deleteDeviceIcon:hover,
+.dataIcon:hover {
+  transform: scale(1.1);
+}
+
+/* Icon image styling */
+.scheduleIcon img,
+.deleteScheduleIcon img,
+.deleteDeviceIcon img,
+.dataIcon img {
+  object-fit: contain;
+  color: white;
+}
+
+.deleteScheduleIcon {
+  position: absolute;
+  top: 10px;
+  right: 90px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.deleteDeviceIcon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.updateDeviceScheduleIcon {
+  position: absolute;
+  top: 10px;
+  right: 130px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.dataIcon {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+@media (max-width: 768px) {
+  .devicesContainer {
+    padding: 10px;
+  }
+
+  .deviceList {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .deviceItem,
+  .addDoc {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    padding: 15px;
+  }
+
+  .deviceDetails {
+    position: static;
+    margin-top: 10px;
+    color: #fff;
+  }
+
+  .turnImg,
+  .scheduleIcon,
+  .deleteScheduleIcon,
+  .deleteDeviceIcon,
+  .updateDeviceScheduleIcon,
+  .dataIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .modelContent {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .modelContent input,
+  .modelContent select {
+    font-size: 14px;
+  }
+
+  .modelContent h2 {
+    font-size: 18px;
+  }
+
+  .modelContent .saveButton,
+  .modelContent .cancelButton {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .deviceImageTopLeft {
+    top: 5px;
+    left: 5px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .deviceList {
+    gap: 10px;
+  }
+
+  .deviceItem,
+  .addDoc {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+
+  .modelContent {
+    padding: 10px;
+  }
+
+  .modelContent h2 {
+    font-size: 16px;
+  }
+
+  .modelContent .saveButton,
+  .modelContent .cancelButton {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}

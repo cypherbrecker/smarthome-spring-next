@@ -1,0 +1,29 @@
+.container {
+  background-color: var(--uniqDarkBlue);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*border: 1px solid var(--borderSoft);*/
+  min-width: 74%;
+  height: 100px;
+}
+
+.title {
+  color: var(--textSoft);
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 21px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
